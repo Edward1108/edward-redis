@@ -49,10 +49,10 @@ namespace edward_redis;
  * @method string|bool rPop(string $key) static 删除并返回队列中的尾元素
  *
  * ----------------字符串操作命令----------------
- * @method bool set(string $key,string $value, $expire) static 设置一个key
+ * @method bool set(string $key,string $value, $expire=null) static 设置一个key
  * @method string|bool get(string $key) static 得到一个key的值
- * @method bool setnx(string $key,string $value,$expire) static 设置一个key,如果key存在,不做任何操作
- * @method bool mset(array $arr,$expire) static 批量设置key
+ * @method bool setnx(string $key,string $value,$expire=null) static 设置一个key,如果key存在,不做任何操作
+ * @method bool mset(array $arr,$expire=null) static 批量设置key
  *
  * ---------------无序集合操作命令---------------
  * @method array sMembers(string $key) static 返回集合中所有元素

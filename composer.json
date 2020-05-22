@@ -1,0 +1,27 @@
+{
+    "name": "edward1108/edward-redis",
+    "description": "ThinkPHP框架Re的Redis扩展，支持多种Redis使用方法。支持ThinkPHP5.0和ThinkPHP5.1",
+    "keywords": [
+        "Redis",
+        "ThinkPHP",
+        "edward-redis",
+        "edward1108"
+    ],
+    "type": "project",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "homepage": "https://github.com/Edward1108/edward-redis",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "edward1108",
+            "email": "xuyuanhua1987@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "edward_redis\\"  : "src"
+        }
+    }
+}

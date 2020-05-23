@@ -1,5 +1,5 @@
 # edward-redis
-ThinkPHP框架Re的Redis扩展，支持多种Redis使用方法。支持ThinkPHP5.0和ThinkPHP5.1
+ThinkPHP框架的Redis扩展，支持多种Redis使用方法。支持ThinkPHP5.0和ThinkPHP5.1
 
 ## 安装
 > composer require edward1108/edward-redis
@@ -38,16 +38,16 @@ return [
 ## 例子
 ```
 <?php
-	namespace app\index\controller;
-	use edward-redis\Redis;
+    namespace app\index\controller;
+    use edward-redis\Redis;
 
-	class index
-	{
-		public function test()
-		{
-			  Redis::set('name','edward-redis');
-			  $res = Redis::get('name');
-			  var_dump($res);  //输出edward-redis代表成功
-		}
-	｝
+    class index
+    {
+        public function test()
+        {
+            Redis::set('name','edward-redis');
+            $res = Redis::get('name');
+            var_dump($res);  //输出edward-redis代表成功
+        }
+    ｝
 ```

@@ -67,10 +67,7 @@ class RedisDriver{
 
     protected function getCacheKey($name)
     {
-        if($this->options['prefix']){
-            return $this->options['prefix'] .'_'. $name;
-        }
-        return $name;
+        return $this->options['prefix'] . $name;
     }
 
     /*****************hash表操作函数*******************/

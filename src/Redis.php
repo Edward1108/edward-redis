@@ -1,5 +1,5 @@
 <?php
-namespace edward_redis;
+namespace edward\redis;
 
 /**
  * Class Redis
@@ -123,7 +123,7 @@ class Redis
             self::$config = array_merge(self::$config, \think\facade\Config::pull('redis'));
         }
         if( is_null(self::$handler) ) {
-            $class = '\\edward_redis\\driver\\RedisService';  //此处部署Redis驱动所在位置，本例为org/redis/driver/Redis，实际根据位置修改
+            $class = '\\edward\\redis\\driver\\RedisDriver';  //此处部署Redis驱动所在位置，本例为org/redis/driver/Redis，实际根据位置修改
             self::$handler = new $class(self::$config);
         }
     }

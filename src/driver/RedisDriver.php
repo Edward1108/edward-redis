@@ -5,8 +5,8 @@
  * Date:2020/5/22
  * Time:15:45
  */
-namespace edward_redis\driver;
-class RedisService{
+namespace edward\redis\driver;
+class RedisDriver{
     /**
      * 驱动句柄
      * @var object

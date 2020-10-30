@@ -10,14 +10,22 @@ ThinkPHP6.0.x 和 ThinkPHP5.1.x
 ```
 config/redis.php
 return [
-	'host' => '127.0.0.1', // redis主机
-	'port' => '', // redis端口
-	'password' => '', // 密码
-	'select' => 0, // 操作库
-	'expire' => 0, // 有效期(秒)
-	'timeout' => 0, // 超时时间(秒)
-	'persistent' => true, // 是否长连接
-	'prefix' => '', //前缀
+    // 缓存前缀
+    'prefix'        => '',
+    // 缓存有效期 0表示永久缓存，单位：秒
+    'expire'        => 0,
+    // redis主机
+    'host'          => '127.0.0.1',
+    // redis端口
+    'port'          => '',
+    // 密码
+    'password'      => '',
+    // 操作库
+    'select'        => 0,
+    // 超时时间(秒)
+    'timeout'       => 0,
+    // 是否长连接
+    'persistent'    => false,
 ];
 ```
 
@@ -25,14 +33,22 @@ ThinkPHP5.0.x
 ```
 config.php
 'redis'                  => [
-	'host' => '127.0.0.1', // redis主机
-	'port' => '', // redis端口
-	'password' => '', // 密码
-	'select' => 0, // 操作库
-	'expire' => 0, // 有效期(秒)
-	'timeout' => 0, // 超时时间(秒)
-	'persistent' => true, // 是否长连接
-	'prefix' => '', //前缀
+    // 缓存前缀
+    'prefix'        => '',
+    // 缓存有效期 0表示永久缓存，单位：秒
+    'expire'        => 0,
+    // redis主机
+    'host'          => '127.0.0.1',
+    // redis端口
+    'port'          => '',
+    // 密码
+    'password'      => '',
+    // 操作库
+    'select'        => 0,
+    // 超时时间(秒)
+    'timeout'       => 0,
+    // 是否长连接
+    'persistent'    => false,
 ]
 ```
 

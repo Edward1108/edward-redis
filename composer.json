@@ -1,6 +1,6 @@
 {
     "name": "edward1108/edward-redis",
-    "description": "ThinkPHP框架的Redis扩展，支持多种Redis使用方法。支持ThinkPHP5.0和ThinkPHP5.1",
+    "description": "ThinkPHP框架的Redis扩展，支持多种Redis使用方法。支持ThinkPHP6.0和ThinkPHP5.x",
     "keywords": [
         "Redis",
         "ThinkPHP",
@@ -9,7 +9,7 @@
     ],
     "type": "project",
     "require": {
-        "php": ">=5.6.0"
+        "php": ">=7.1.0"
     },
     "homepage": "https://github.com/Edward1108/edward-redis",
     "license": "MIT",
@@ -22,6 +22,13 @@
     "autoload": {
         "psr-4" : {
             "edward\\redis\\"  : "src"
+        }
+    },
+    "extra":{
+        "think": {
+            "config":{
+                "redis": "src/config.php"
+            }
         }
     }
 }
